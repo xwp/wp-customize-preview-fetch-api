@@ -15,7 +15,7 @@
 	 *
 	 * @param {string} input - URL.
 	 * @param {object} [init] - Options.
-	 * @return {Promise}
+	 * @return {Promise} Response promise.
 	 */
 	window.fetch = function fetch( input, init ) {
 		var initOptions, urlParser, queryParams, requestMethod, dirtyValues = {};

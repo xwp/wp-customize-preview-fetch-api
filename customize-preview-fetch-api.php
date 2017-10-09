@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: Customize Preview Fetch API
- * Description: Applying the customized state to the responses for calls to fetch() in the same way that jQuery Ajax prefilter is implemented in the Customizer preview today.
+ * Plugin Name: Trac #42163: Customize Preview Fetch API
+ * Description: Inject the customized state in fetch() requests in the same way that jQuery.prefilterAjax() is utilized to inject the customized state in the Customizer preview as of 4.7 so that responses have the customized state applied.
  * Author: Weston Ruter, XWP
- * Plugin URI: https://wordpress.stackexchange.com/questions/282139/how-to-make-get-theme-mod-work-with-ajax-in-the-customizer-preview
+ * Plugin URI: https://core.trac.wordpress.org/ticket/42163
  * Version: 0.1.0
  * Author URI: https://make.xwp.co/
  * License: GPLv2+
  *
- * Copyright (c) 2016 XWP (https://xwp.co/)
+ * Copyright (c) 2017 XWP (https://xwp.co/)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License, version 2 or, at
