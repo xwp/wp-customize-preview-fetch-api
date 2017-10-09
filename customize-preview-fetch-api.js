@@ -70,7 +70,7 @@
 				initOptions.body = new FormData();
 			}
 
-			initOptions.body.set( 'nonce', api.settings.nonce.preview );
+			initOptions.body.set( 'customize_preview_nonce', api.settings.nonce.preview );
 			initOptions.body.set( 'customized', JSON.stringify( dirtyValues ) );
 		}
 
