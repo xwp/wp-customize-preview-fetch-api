@@ -1,0 +1,8 @@
+{
+	"extends": "./dev-lib/.eslintrc",
+
+	"rules": {
+		"complexity": 0,
+		"no-magic-numbers": [ 0, { "ignore": [ 1 ] } ]
+	}
+}
