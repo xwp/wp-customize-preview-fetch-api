@@ -45,6 +45,9 @@
 		if ( 0 === urlParser.href.indexOf( api.settings.restApi.root ) ) {
 			queryParams._wpnonce = api.settings.restApi.nonce;
 		}
+		if ( api.settings.changeset.autosaved ) {
+			queryParams.customize_autosaved = 'on';
+		}
 
 		// Note that _dirty flag will be cleared with changeset updates.
 		api.each( function( setting ) {
