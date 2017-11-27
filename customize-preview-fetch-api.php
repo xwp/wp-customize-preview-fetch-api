@@ -28,15 +28,19 @@
  * @subpackage Customize
  */
 
-add_action( 'wp_enqueue_scripts', function() {
-	if ( ! is_customize_preview() ) {
-		return;
-	}
-	wp_enqueue_script(
+add_action( 'wp_default_scripts', function( WP_Scripts $wp_scripts ) {
+	$wp_scripts->add(
 		'customize-preview-fetch-api',
 		plugin_dir_url( __FILE__ ) . 'customize-preview-fetch-api.js',
 		array( 'customize-preview' )
 	);
+} );
+
+add_action( 'wp_enqueue_scripts', function() {
+	if ( ! is_customize_preview() ) {
+		return;
+	}
+	wp_enqueue_script( 'customize-preview-fetch-api' );
 } );
 
 add_action( 'wp_footer', function() {
